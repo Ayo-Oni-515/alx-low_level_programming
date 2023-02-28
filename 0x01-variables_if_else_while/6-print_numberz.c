@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	char start;
+	int start;
 
 	start = '0';
 	for (i = start; i != ':'; i++)
