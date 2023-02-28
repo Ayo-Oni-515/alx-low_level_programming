@@ -13,7 +13,7 @@ int main(void)
 	start = 'a';
 	for (i = start; i != '{'; i++)
 	{
-		if (i == 'e' || i == 'e')
+		if (i == 'e' || i == 'q')
 		{
 			continue;
 		}
