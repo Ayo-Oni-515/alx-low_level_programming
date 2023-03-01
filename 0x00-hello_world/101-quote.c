@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	char display[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char i[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
-	fprintf(stdout, "%s\n", display);
+	fprintf(stdout, "%s\n", i);
 	return (1);
 }
