@@ -25,9 +25,12 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+				else
+				{
+					putchar('\b');
+				}
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
