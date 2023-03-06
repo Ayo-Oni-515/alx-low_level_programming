@@ -16,12 +16,17 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			value = i * j;
-			if (j == 9)
+			if (value > 9)
 			{
-				printf("%d\n", value);
+				printf("%1d,", value);
 				continue;
 			}
-			printf("%d,  ", value);
+			if (j == 9)
+			{
+				printf("%1d\n", value);
+				continue;
+			}
+			printf("%2d,", value);
 		}
 	}
 }
