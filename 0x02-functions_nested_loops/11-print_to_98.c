@@ -4,7 +4,7 @@
 /**
  * print_to_98 - check the code
  * @n: Argument
- * Return: 
+ * Return:
  */
 
 void print_to_98(int n)
