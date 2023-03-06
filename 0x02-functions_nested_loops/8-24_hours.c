@@ -2,8 +2,7 @@
 
 /**
  * jack_bauer - Entry point
- *
- *  Return:  
+ * Return:
  */
 
 void jack_bauer(void)
