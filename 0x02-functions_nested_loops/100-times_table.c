@@ -1,49 +1,49 @@
-#nclude "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
  * print_times_table - check the code
- * @n: Argument.
  * Return:
  */
 
 void print_times_table(int n)
 {
-	int i, j, value;
+	int x, y, value, u, d;
 
-	for (i = 0; i <= n; i++)
+	for (x = 0; x <= n; x++)
 	{
-		for (j = 0; j <= n; j++)
+		for (y = 0; y <= n; y++)
 		{
-			value = i * j;
-			if (j == n)
+			value = x * y;
+			if (value > 9)
 			{
-				if (value <= 9)
-                        	{
-                                	printf("%3d\n", value);
-                        	}
-                        	else if (value > 9)
-                        	{
-                                	printf("%2d\n", value);
-                        	}
-                       		else if (value > 90)
-                        	{
-                                	printf("%1d\n", value);
-                        	}
-				continue;
+				u = value % 10;
+				d = value / 10;
+				_putchar(44);
+				_putchar(32);
+				_putchar(d + '0');
+				_putchar(u + '0');
 			}
-			if (value <= 9)
+			else if (value >= 100)
 			{
-				printf("%3d,", value);
+				u = value % 100;
+				d = value / 100;
+				_putchar(44);
+				_putchar(32);
+				_putchar(d + '0');
+				_putchar(u + '0');
 			}
-			else if (value > 9)
+			else
 			{
-				printf("%2d,  ", value);
-			}
-			else if (value > 90)
-			{
-				printf("%1d,   ", value);
+				if (y != 0)
+				{
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
+				}
+				_putchar(value + '0');
 			}
 		}
+		_putchar('\n');
 	}
 }
