@@ -7,8 +7,8 @@
 int main(void)
 {
 	int i;
-	unsigned long fibonacci[100] = {0, 1, 1, 2};
-	long sum;
+	long fibonacci[100] = {0, 1, 1, 2};
+	long sum = 0;
 
 	for (i = 4; i <= 100; i++)
 	{
@@ -17,7 +17,14 @@ int main(void)
 
 	for (i = 2; fibonacci[i] < 4000000 ; i++)
 	{
-		sum += fibonacci[i];
+		if (fibonacci[i] % 2 == 0)
+		{
+			sum += fibonacci[i];
+		}
+		else
+		{
+			continue;
+		}
 	}
 	printf("%ld\n", sum);
 	return (0);

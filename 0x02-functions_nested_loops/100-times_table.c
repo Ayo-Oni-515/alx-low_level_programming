@@ -26,12 +26,12 @@ void print_times_table(int n)
 			}
 			else if (value >= 100)
 			{
-				u = value % 100;
-				d = value / 100;
+				u = value / 100;
+				d = (value / 10) % 10;
 				_putchar(44);
 				_putchar(32);
-				_putchar(d + '0');
 				_putchar(u + '0');
+				_putchar(d + '0');
 			}
 			else
 			{
