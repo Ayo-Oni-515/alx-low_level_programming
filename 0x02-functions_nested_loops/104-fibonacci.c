@@ -7,16 +7,16 @@
 int main(void)
 {
 	int i;
-	long fibonacci[100] = {0, 1, 1, 2};
+	long int fibonacci[100] = {0, 1, 1, 2};
 
 	for (i = 4; i <= 100; i++)
 	{
 		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 	}
 
-	for (i = 2; i < 97; i++)
+	for (i = 2; i <= 99; i++)
 	{
-		if (i == 96)
+		if (i == 99)
 		{
 			printf("%lu\n", fibonacci[i]);
 			break;
