@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i;
-	unsigned long fibonacci[100] = {0, 1, 1, 2};
+	long fibonacci[100] = {0, 1, 1, 2};
 
 	for (i = 4; i <= 100; i++)
 	{
